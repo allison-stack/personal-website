@@ -56,7 +56,6 @@ export default function Home() {
 
       <section className="mb-8 bg-gray-800 p-8 rounded-md">
         <h2 className="text-3xl font-bold">Resume</h2>
-        {/* Use embed tag to display PDF */}
         <embed src="/Allison_s_Resume_Jan2024.pdf" type="application/pdf" width="100%" height="600px" />
       </section>
 
