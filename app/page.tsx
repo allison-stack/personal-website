@@ -1,101 +1,85 @@
 import { useState } from "react";
- 
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 export default function Home() {
   return (
-    <main className="flex gap-3 flex-col justify-between p-24 max-w-5xl mx-auto">
-      <div>
-        <h1 className="text-5xl">Allison Zhao</h1>
-        <p>Developer | Student @ McMaster University</p>
-      </div>
- 
-      <div>
-        <h2 className="text-4xl">Socials</h2>
- 
-        <ul>
-          <li>
-            Twitter: {" "}
-            <a
-              className="text-blue-600 underline"
-              href="https://twitter.com">
-              @johndoe
+    <main className="max-w-5xl mx-auto p-8 bg-gray-800 rounded-md text-white">
+      <section className="mb-8 bg-gray-800 p-8 rounded-md">
+        <div className="flex justify-between items-center">
+          <h1 className="text-5xl font-bold">👋 I&apos;m Allison Zhao</h1>
+          <div className="flex items-center space-x-4">
+            <a href="https://github.com/allison-stack" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-2xl text-gray-400 hover:text-gray-200" />
             </a>
-          </li>
-          <li>
-            Github: {" "}
-            <a
-              className="text-blue-600 underline"
-              href="https://github.com">
-              @johndoe
+            <a href="https://www.linkedin.com/in/allison-zhao-41a3a21b6/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-2xl text-gray-400 hover:text-gray-200" />
             </a>
-          </li>
-          <li>
-            LinkedIn: {" "}
-            <a
-              className="text-blue-600 underline"
-              href="https://linkedin.com">
-              @johndoe
+            <a href="mailto:allisonzhao.uni@gmail.com">
+              <FaEnvelope className="text-2xl text-gray-400 hover:text-gray-200" />
             </a>
-          </li>
-        </ul>
-      </div>
- 
-      <div className="flex flex-col gap-2">
-        <h2 className="text-4xl">Projects</h2>
-        <div className="grid gap-2 grid-cols-1 md:grid-cols-2">
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Alpha</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Beta</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Gamma</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
-          </div>
-          <div className="p-4 border rounded shadow-md">
-            <h3 className="text-3xl text-bold">Project Delta</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.</p>
+            <a className="text-blue-600 underline" href="https://drive.google.com/file/d/1SNIaxqzx4_IyV1aI50Dgs5And0tW2Z3Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
+                View Resume
+              </button>
+            </a>
           </div>
         </div>
-      </div>
- 
-      {/* An example of how to use JS functions in JSX*/}
-      The date is {new Date().toUTCString()}
- 
+        <p>Developer | Student @ McMaster University</p>
+      </section>
+
+      <section className="mb-8 bg-gray-800 p-8 rounded-md">
+        <h2 className="text-3xl font-bold">About Me</h2>
+        <p>
+          Hi! Welcome to my simple and humble website. Here are some fun facts about me:
+        </p>
+        <ul className="list-disc pl-5">
+          <li>I major in computer science</li>
+          <li>Catch me at local restaurants/cafes trying out signature dishes/drinks during the day and stargazing at night</li>
+          <li>I enjoy getting to know all sorts of people and hearing about things from their perspective</li>
+          <li>I try to get involved in the McMaster community:
+              <ul className="list-disc pl-5">
+                  <li>I'm a logistics executive for Deltahacks -- McMaster's annual hackathon for change</li>
+                  <li>And a fellow contributor to McMaster's GDSC open-source projects</li>
+              </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-8 bg-gray-800 p-8 rounded-md">
+        <h2 className="text-3xl font-bold">Experience</h2>
+        <ul className="list-disc pl-5">
+          <li>This previous summer I was an undergrad researcher @ IBM CAS where I worked on code optimization</li>
+          <li>I also did some coding mentorship, teaching 100+ young children how to program in Elm</li>
+          <li>I was a student ambassador for McMaster&apos;s computing and software department</li>
+        </ul>
+      </section>
+
+      <section className="mb-8 bg-gray-800 p-8 rounded-md">
+        <h2 className="text-3xl font-bold">Resume</h2>
+        {/* Use embed tag to display PDF */}
+        <embed src="/Allison_s_Resume_Jan2024.pdf" type="application/pdf" width="100%" height="600px" />
+      </section>
+
+      <section className="text-sm text-white bg-gray-800 p-4 rounded-md mt-8">
+        <div className="flex items-center justify-between">
+          <div className="flex space-x-4">
+            <a href="https://github.com/allison-stack" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-2xl text-gray-400 hover:text-gray-200" />
+            </a>
+            <a href="https://www.linkedin.com/in/allison-zhao-41a3a21b6/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-2xl text-gray-400 hover:text-gray-200" />
+            </a>
+            <a href="mailto:allisonzhao.uni@gmail.com">
+              <FaEnvelope className="text-2xl text-gray-400 hover:text-gray-200" />
+            </a>
+          </div>
+
+          {/* Additional Footer Content */}
+          <div>
+            Last updated: {new Date().toUTCString()}
+          </div>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
