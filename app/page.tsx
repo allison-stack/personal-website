@@ -38,8 +38,8 @@ export default function Home() {
           <li>I enjoy getting to know all sorts of people and hearing about things from their perspective</li>
           <li>I try to get involved in the McMaster community:
               <ul className="list-disc pl-5">
-                  <li>I'm a logistics executive for Deltahacks -- McMaster's annual hackathon for change</li>
-                  <li>And a fellow contributor to McMaster's GDSC open-source projects</li>
+                  <li>I&apos;m a logistics executive for Deltahacks -- McMaster&apos;s annual hackathon for change</li>
+                  <li>And a fellow contributor to McMaster&apos;s GDSC open-source projects</li>
               </ul>
           </li>
         </ul>
