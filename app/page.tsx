@@ -17,7 +17,7 @@ export default function Home() {
             <a href="mailto:allisonzhao.uni@gmail.com">
               <FaEnvelope className="text-2xl text-gray-400 hover:text-gray-200" />
             </a>
-            <a className="text-blue-600 underline" href="https://drive.google.com/file/d/1SNIaxqzx4_IyV1aI50Dgs5And0tW2Z3Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a className="text-blue-600 underline" href="https://drive.google.com/file/d/1fg8KX70MgNv15gsqKbiV9Uyq5t6-qrDO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
                 View Resume
               </button>
@@ -45,13 +45,19 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="mb-8 bg-gray-800 p-8 rounded-md">
-        <h2 className="text-3xl font-bold">Experience</h2>
-        <ul className="list-disc pl-5">
-          <li>This previous summer I was an undergrad researcher @ IBM CAS where I worked on code optimization</li>
-          <li>I also did some coding mentorship, teaching 100+ young children how to program in Elm</li>
-          <li>I was a student ambassador for McMaster&apos;s computing and software department</li>
-        </ul>
+      <section className="mb-8 bg-gray-800 p-8 rounded-md flex items-center">
+        <div className="mr-4">
+          <h2 className="text-3xl font-bold">Experience</h2>
+          <ul className="list-disc pl-5">
+            <li>This previous summer I was an undergrad researcher @ IBM CAS where I worked on code optimization</li>
+            <li>I also did some coding mentorship, teaching 100+ young children how to program in Elm</li>
+            <li>I was a student ambassador for McMaster&apos;s computing and software department</li>
+          </ul>
+        </div>
+
+        <div className="flex-shrink-0">
+          <img src="IBM_CAS_Poster.png" alt="Experience Image" className="w-50 h-60 object-cover rounded-md" />
+        </div>
       </section>
 
       <section className="mb-8 bg-gray-800 p-8 rounded-md">
