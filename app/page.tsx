@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto p-8 bg-gray-800 rounded-md text-white">
-      <section className="mb-8 bg-gray-800 p-8 rounded-md">
+      <section className="mb-8 bg-gray-1000 p-8 rounded-md">
         <div className="flex justify-between items-center">
           <h1 className="text-5xl font-bold">👋 I&apos;m Allison Zhao</h1>
           <div className="flex items-center space-x-4">
@@ -17,32 +17,21 @@ export default function Home() {
             <a href="mailto:allisonzhao.uni@gmail.com">
               <FaEnvelope className="text-2xl text-gray-400 hover:text-gray-200" />
             </a>
-            <a className="text-blue-600 underline" href="https://drive.google.com/file/d/1fg8KX70MgNv15gsqKbiV9Uyq5t6-qrDO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
-                View Resume
-              </button>
-            </a>
           </div>
         </div>
-        <p>Developer | Student @ McMaster University</p>
+        <p>Developer | Researcher | Student @ McMaster University</p>
       </section>
 
       <section className="mb-8 bg-gray-800 p-8 rounded-md">
-        <h2 className="text-3xl font-bold">About Me</h2>
+        <h2 className="text-3xl font-bold">Hello World!</h2>
         <p>
-          Hi! Welcome to my simple and humble website. Here are some fun facts about me:
+          <ul className="list-disc pl-5">
+            <li>Hey, I'm Allison Zhao, a computer science student at McMaster University and an undergraduate researcher at IBM CAS.</li>
+            <li>I specialize in Web Development, Machine Learning, Code Optimization, and Quantum Computing. Some technologies I'm working with right now include: React Native, Haskell, C, and Qiskit (Python).</li>
+            <li>Outside of academia and work I play badminton, and chess!</li>
+          </ul>
         </p>
-        <ul className="list-disc pl-5">
-          <li>I major in computer science</li>
-          <li>Catch me at local restaurants/cafes trying out signature dishes/drinks during the day and stargazing at night</li>
-          <li>I enjoy getting to know all sorts of people and hearing about things from their perspective</li>
-          <li>I try to get involved in the McMaster community:
-              <ul className="list-disc pl-5">
-                  <li>I&apos;m a logistics executive for Deltahacks -- McMaster&apos;s annual hackathon for change</li>
-                  <li>And a fellow contributor to McMaster&apos;s GDSC open-source projects</li>
-              </ul>
-          </li>
-        </ul>
+
       </section>
 
       <section className="mb-8 bg-gray-800 p-8 rounded-md flex items-center">
