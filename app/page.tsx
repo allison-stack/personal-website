@@ -24,14 +24,11 @@ export default function Home() {
 
       <section className="mb-8 bg-gray-800 p-8 rounded-md">
         <h2 className="text-3xl font-bold">Hello World!</h2>
-        <p>
-          <ul className="list-disc pl-5">
-            <li>Hey, I'm Allison Zhao, a computer science student at McMaster University and an undergraduate researcher at IBM CAS.</li>
-            <li>I specialize in Web Development, Machine Learning, Code Optimization, and Quantum Computing. Some technologies I'm working with right now include: React Native, Haskell, C, and Qiskit (Python).</li>
-            <li>Outside of academia and work I play badminton, and chess!</li>
-          </ul>
-        </p>
-
+        <ul className="list-disc pl-5">
+          <li>Hey, I&apos;m Allison Zhao, a computer science student at McMaster University and an undergraduate researcher at IBM CAS.</li>
+          <li>I specialize in Web Development, Machine Learning, Code Optimization, and Quantum Computing. Some technologies I&apos;m working with right now include: React Native, Haskell, C, and Qiskit (Python).</li>
+          <li>Outside of academia and work I play badminton, and chess!</li>
+        </ul>
       </section>
 
       <section className="mb-8 bg-gray-800 p-8 rounded-md flex items-center">
